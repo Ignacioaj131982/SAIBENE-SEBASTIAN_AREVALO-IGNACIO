@@ -1,0 +1,19 @@
+-- Elimina la tabla si existe
+DROP TABLE IF EXISTS ODONTOLOGOS;
+
+-- Crea la tabla con la columna autoincrementable
+CREATE TABLE ODONTOLOGOS (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    NUMERODEMATRICULA INT NOT NULL,
+    NOMBRE VARCHAR(50) NOT NULL,
+    APELLIDO VARCHAR(50) NOT NULL
+);
+
+-- Inserta los datos en la tabla
+INSERT INTO ODONTOLOGOS (NUMERODEMATRICULA, NOMBRE, APELLIDO) VALUES
+    ( 1, 'JUAN', 'PEREZ'),
+    (2, 'MARIA', 'GOMEZ'),
+    (3, 'CARLOS', 'RODRIGUEZ'),
+    (4, 'ANA', 'MARTINEZ'),
+    (5, 'LUIS', 'FERNANDEZ');
+
